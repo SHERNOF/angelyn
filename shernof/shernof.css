@@ -8,6 +8,39 @@
   font-size: 1.5rem;
 }
 
+/* sub */
+.sub {
+  /* border: 1px solid red; */
+  padding: 40px;
+}
+
+.sub .row .cooking .ingredients {
+  margin: 20px;
+}
+.sub .row .cooking {
+  /* border: 1px solid blue; */
+  /* margin-right: 20px; */
+}
+
+.sub .row .ingredients {
+  /* border: 1px solid green; */
+}
+
+.sub .row .ingredients .ingredients-image {
+  width: 90%;
+  height: 400px;
+  margin-bottom: 20px;
+}
+
+.sub .row .ingredients .ingredients-image .ingredients-img {
+  width: 100%;
+  height: 100%;
+}
+
+/* end of sub */
+
+/* Product List */
+
 .product-list .container .product {
   display: grid;
   grid-gap: 4rem;
@@ -19,6 +52,19 @@
   height: 250px;
   border-bottom-left-radius: 0%;
   border-bottom-right-radius: 0%;
+}
+
+/* End of Product List */
+
+@media (max-width: 1200px) {
+  .sub {
+    /* display: grid; */
+    /* grid-template-columns: 90%; */
+  }
+
+  .sub .sub-box .cooking-videos {
+    /* display: flex; */
+  }
 }
 
 @media (max-width: 770px) {
@@ -35,5 +81,15 @@
     display: flex;
     align-items: center;
     justify-content: center;
+  }
+
+  .sub {
+    /* grid-template-columns: 1fr; */
+    /* padding: 100px 0; */
+    /* height: 80vh; */
+  }
+  .sub .sub-box {
+    /* width: 90%; */
+    /* height: 300px; */
   }
 }
